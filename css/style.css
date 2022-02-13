@@ -53,6 +53,14 @@
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+/*----------------------------------------------------------------------------*/
+/*Content*/
+/*----------------------------------------------------------------------------*/
+
+.content {
+  margin-left: 300px;
+  padding: 5px 5px;
+}
 
 /*----------------------------------------------------------------------------*/
 /*Sidebar responcive*/
@@ -66,27 +74,10 @@
     width: 300px;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5px 25px;
     overflow: auto;
     color: azure;
     transition: all0.5s ease;
-  }
-  
-  
-  .content {
-    margin-left: 300px;
-    padding: 5px 5px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .wrapper .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .content {
-      margin-left: 0;
-    }
   }
 
   .wrapper .sidebar .profile{
@@ -100,4 +91,18 @@
     height: 200px;
     border-radius: 50%;
     margin: 0 auto;
+    padding: 10px 10px;
   }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .content {
+      margin-left: 0;
+    }
+  }
+
+
