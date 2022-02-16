@@ -128,14 +128,16 @@
 /*Time line*/
 /*----------------------------------------------------------------------------*/
 .timeline {
-  display: grid;
-  grid-template-columns: 1fr 3px 1fr;
+  display: block;
   font-family: "Fira Sans", sans-serif;
   color: black;
+  left: 500px;
 }
 
 .timeline__component {
   margin: 35px 60px;
+  position: relative;
+  left: 50px;
 }
 
 .timeline__component--bg {
@@ -143,11 +145,6 @@
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-}
-
-/* LEAVE TILL LAST */
-.timeline__component--bottom {
-  margin-bottom: 0;
 }
 
 .timeline__middle {
@@ -158,7 +155,7 @@
 .timeline__point {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 50px;
   transform: translateX(-50%);
   width: 100px;
   height: 100px;
@@ -167,20 +164,11 @@
   border-color: lightgray;
 }
 
-/* LEAVE TILL LAST */
-.timeline__point--bottom {
-  top: initial;
-  bottom: 0;
-}
-
-.timeline__date--right {
-  text-align: right;
-}
-
 .timeline__title {
   margin: 0;
   font-size: 1.15em;
   font-weight: bold;
+  text-align: center;
 }
 
 .timeline__paragraph {
